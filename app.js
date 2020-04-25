@@ -1,3 +1,4 @@
+var PORT= process.env.PORT || 3000
 var express = require("express"); 
 var mongoose = require("mongoose"); 
 
@@ -73,6 +74,6 @@ app.get("/blogs/:id",function(req,res){
 
 
 
-app.listen(3000,function(req,res){ 
+app.listen(PORT,function(req,res){ 
   console.log("server start at 3000");
 })
