@@ -1,0 +1,46 @@
+<%- include ("partials/header")  %>
+
+<br><br>
+<br>
+<div class ="ui main text container segment">
+    <div class ="ui huge header"> <%= blog.title%></div> 
+    <div class = " content"> 
+
+        <span><%=blog.Created.toDateString() %></span>
+        <p></p>
+
+    </div>    
+        <div class ="ui top attached segment ">
+            <div class ="item ">
+                <img  class =" ui centered rounded image"src="<%= blog.image %>" > 
+                
+                <div class ="description">
+                    <h4><%= blog.body %></h4>
+                </div>
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+
+                    <a class="a2a_button_copy_link" style="float:right;"></a>
+                    <a class="a2a_button_facebook_messenger" style="float:right;"></a>
+                    <a class="a2a_button_facebook"style="float:right;"></a>
+                    <a class="a2a_button_twitter" style="float:right;"></a>
+                    <a class="a2a_button_whatsapp" style="float:right;"></a>
+                    <a class="a2a_button_linkedin" style="float:right;"></a>
+                    <a class="a2a_button_email" style="float:right;"></a>
+                    </div>
+                    <script>
+                    var a2a_config = a2a_config || {};
+                    a2a_config.onclick = 1;
+                    </script>
+                    <script async src="https://static.addtoany.com/menu/page.js"></script>
+            </div>
+
+        </div>
+            
+
+           
+            
+
+   
+</div>
+
+<%- include ("partials/footer") %>
